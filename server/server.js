@@ -26,7 +26,7 @@ app.get("*",(req,res)=>{
 
 const PORT = process.env.PORT || 8000;
 
-const url=process.env.url;
+const url=process.env.URL;
 Connection(url);
 
 app.listen(PORT, () => console.log(`Your server is running successfully on PORT ${PORT}`));
